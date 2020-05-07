@@ -45,6 +45,7 @@
             this.fieldName.Name = "fieldName";
             this.fieldName.Size = new System.Drawing.Size(370, 41);
             this.fieldName.TabIndex = 0;
+            this.fieldName.Click += new System.EventHandler(this.Field_Click);
             // 
             // fieldSurname
             // 
@@ -53,6 +54,7 @@
             this.fieldSurname.Name = "fieldSurname";
             this.fieldSurname.Size = new System.Drawing.Size(370, 41);
             this.fieldSurname.TabIndex = 1;
+            this.fieldSurname.Click += new System.EventHandler(this.Field_Click);
             // 
             // fieldEmail
             // 
@@ -61,6 +63,7 @@
             this.fieldEmail.Name = "fieldEmail";
             this.fieldEmail.Size = new System.Drawing.Size(370, 41);
             this.fieldEmail.TabIndex = 2;
+            this.fieldEmail.Click += new System.EventHandler(this.Field_Click);
             // 
             // fieldPassword
             // 
@@ -69,6 +72,7 @@
             this.fieldPassword.Name = "fieldPassword";
             this.fieldPassword.Size = new System.Drawing.Size(370, 41);
             this.fieldPassword.TabIndex = 3;
+            this.fieldPassword.Click += new System.EventHandler(this.Field_Click);
             // 
             // fieldAge
             // 
@@ -100,6 +104,7 @@
             this.fieldPasswordRepeat.Name = "fieldPasswordRepeat";
             this.fieldPasswordRepeat.Size = new System.Drawing.Size(370, 41);
             this.fieldPasswordRepeat.TabIndex = 5;
+            this.fieldPasswordRepeat.Click += new System.EventHandler(this.Field_Click);
             // 
             // buttonSignIn
             // 
@@ -115,7 +120,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(401, 639);
+            this.ClientSize = new System.Drawing.Size(400, 506);
             this.Controls.Add(this.buttonSignIn);
             this.Controls.Add(this.fieldPasswordRepeat);
             this.Controls.Add(this.fieldAge);
