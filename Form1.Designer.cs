@@ -45,7 +45,8 @@
             this.fieldName.Name = "fieldName";
             this.fieldName.Size = new System.Drawing.Size(370, 41);
             this.fieldName.TabIndex = 0;
-            this.fieldName.Click += new System.EventHandler(this.Field_Click);
+            this.fieldName.Enter += new System.EventHandler(this.Field_Enter);
+            this.fieldName.Leave += new System.EventHandler(this.Field_Leave);
             // 
             // fieldSurname
             // 
@@ -54,7 +55,8 @@
             this.fieldSurname.Name = "fieldSurname";
             this.fieldSurname.Size = new System.Drawing.Size(370, 41);
             this.fieldSurname.TabIndex = 1;
-            this.fieldSurname.Click += new System.EventHandler(this.Field_Click);
+            this.fieldSurname.Enter += new System.EventHandler(this.Field_Enter);
+            this.fieldSurname.Leave += new System.EventHandler(this.Field_Leave);
             // 
             // fieldEmail
             // 
@@ -63,7 +65,8 @@
             this.fieldEmail.Name = "fieldEmail";
             this.fieldEmail.Size = new System.Drawing.Size(370, 41);
             this.fieldEmail.TabIndex = 2;
-            this.fieldEmail.Click += new System.EventHandler(this.Field_Click);
+            this.fieldEmail.Enter += new System.EventHandler(this.Field_Enter);
+            this.fieldEmail.Leave += new System.EventHandler(this.Field_Leave);
             // 
             // fieldPassword
             // 
@@ -72,7 +75,8 @@
             this.fieldPassword.Name = "fieldPassword";
             this.fieldPassword.Size = new System.Drawing.Size(370, 41);
             this.fieldPassword.TabIndex = 3;
-            this.fieldPassword.Click += new System.EventHandler(this.Field_Click);
+            this.fieldPassword.Enter += new System.EventHandler(this.Field_Enter);
+            this.fieldPassword.Leave += new System.EventHandler(this.Field_Leave);
             // 
             // fieldAge
             // 
@@ -104,7 +108,8 @@
             this.fieldPasswordRepeat.Name = "fieldPasswordRepeat";
             this.fieldPasswordRepeat.Size = new System.Drawing.Size(370, 41);
             this.fieldPasswordRepeat.TabIndex = 5;
-            this.fieldPasswordRepeat.Click += new System.EventHandler(this.Field_Click);
+            this.fieldPasswordRepeat.Enter += new System.EventHandler(this.Field_Enter);
+            this.fieldPasswordRepeat.Leave += new System.EventHandler(this.Field_Leave);
             // 
             // buttonSignIn
             // 
