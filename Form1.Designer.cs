@@ -125,12 +125,13 @@
             // checkShowPassword
             // 
             this.checkShowPassword.AutoSize = true;
-            this.checkShowPassword.Location = new System.Drawing.Point(12, 334);
+            this.checkShowPassword.Location = new System.Drawing.Point(12, 325);
             this.checkShowPassword.Name = "checkShowPassword";
             this.checkShowPassword.Size = new System.Drawing.Size(129, 21);
             this.checkShowPassword.TabIndex = 7;
             this.checkShowPassword.Text = "Show Password";
             this.checkShowPassword.UseVisualStyleBackColor = true;
+            this.checkShowPassword.CheckedChanged += new System.EventHandler(this.checkShowPassword_CheckedChanged);
             // 
             // Form1
             // 

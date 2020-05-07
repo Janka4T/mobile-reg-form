@@ -75,5 +75,25 @@ namespace mobile_reg_form
                 }
             }
         }
+
+        private void checkShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkShowPassword.Checked)
+            {
+                fieldPassword.PasswordChar = '\0';
+                fieldPasswordRepeat.PasswordChar = '\0';
+            }
+            else
+            {
+                if(fieldPassword.Text != (string)fieldPassword.Tag)
+                {
+                    fieldPassword.PasswordChar = '*';
+                }
+                if(fieldPasswordRepeat.Text != (string)fieldPasswordRepeat.Tag)
+                {
+                    fieldPasswordRepeat.PasswordChar = '*';
+                }                
+            }
+        }
     }
 }
