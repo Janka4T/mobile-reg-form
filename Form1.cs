@@ -40,9 +40,14 @@ namespace mobile_reg_form
             fieldPasswordRepeat.Text = "PasswordRepeat";
             fieldPasswordRepeat.ForeColor = Color.LightGray;
             fieldPasswordRepeat.Tag = "PasswordRepeat";
-            
 
-           
+            registerdUsers.Columns.Add("Name");
+            registerdUsers.Columns.Add("Surname");
+            registerdUsers.Columns.Add("Email");
+            registerdUsers.Columns.Add("Age");
+            registerdUsers.Columns.Add("Password");
+
+
         }
 
         private void Field_Enter(object sender, EventArgs e)
@@ -93,6 +98,55 @@ namespace mobile_reg_form
                 {
                     fieldPasswordRepeat.PasswordChar = '*';
                 }                
+            }
+        }
+
+        private void buttonSignIn_Click(object sender, EventArgs e)
+        {
+            if (fieldPassword.Text != fieldPasswordRepeat.Text)
+            {
+                //passwords not equal
+                fieldPassword.BackColor = Color.Red;
+                fieldPasswordRepeat.BackColor = Color.Red;
+                return;
+
+            }
+            //MessageBox.Show("User registered!");
+
+
+
+            //regiesterdUserList.Items.Add(fieldName.Text);
+            //regiesterdUserList.Items.Add(fieldSurname.Text);
+            //regiesterdUserList.Items.Add(fieldAge.Text);
+            //regiesterdUserList.Items.Add(fieldPassword.Text);            
+            //regiesterdUserList.Items.Add("__________");
+
+            var item = new ListViewItem(new[] { fieldName.Text, fieldSurname.Text, fieldEmail.Text, fieldAge.Value.ToString(), fieldPassword.Text });
+            registerdUsers.Items.Add(item);
+
+            
+
+
+        }
+
+        private void Password_TextChanged(object sender, EventArgs e)
+        {
+
+            if(fieldPassword.Text == (string)fieldPassword.Tag || fieldPasswordRepeat.Text == (string)fieldPasswordRepeat.Tag)
+            {
+                return;
+            }
+
+            if(fieldPassword.Text == fieldPasswordRepeat.Text)
+            {
+                fieldPassword.BackColor = Color.LightGreen;
+                fieldPasswordRepeat.BackColor = Color.LightGreen;
+            }
+
+            else
+            {
+                fieldPassword.BackColor = Color.LightYellow;
+                fieldPasswordRepeat.BackColor = Color.LightYellow;
             }
         }
     }
